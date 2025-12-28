@@ -1,0 +1,14 @@
+[plugin]
+name = "apps"
+version = "0.1.0"
+description = "Application launcher from .desktop files"
+api_version = "1"
+author = "menu-kit team"
+
+[plugin.dependencies]
+python = []
+
+[plugin.dependencies.system]
+apt = []
+dnf = []
+pacman = []

@@ -1,0 +1,33 @@
+name: Build Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+      - 'scripts/build_index.py'
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build index
+        run: python scripts/build_index.py
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.json
+          git diff --staged --quiet || git commit -m "chore: update index.json"
+          git push

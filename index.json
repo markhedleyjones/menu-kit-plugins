@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "generated": "2025-12-28T23:37:05.121835+00:00",
+  "plugins": {
+    "apps": {
+      "version": "0.1.0",
+      "description": "Application launcher from .desktop files",
+      "api_version": "1",
+      "author": "menu-kit team",
+      "download": "plugins/apps",
+      "sha256": "f04a0a4db0417ea1554057cfdc9519cb1e81484bb323a1e5a6e15da9f473202c",
+      "dependencies": {
+        "python": [],
+        "system": {
+          "apt": [],
+          "dnf": [],
+          "pacman": []
+        }
+      },
+      "verified": true
+    }
+  }
+}
