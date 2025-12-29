@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2025-12-28T23:37:05.121835+00:00",
+  "generated": "2025-12-29T09:15:19.403569+00:00",
   "plugins": {
     "apps": {
       "version": "0.1.0",
@@ -8,7 +8,7 @@
       "api_version": "1",
       "author": "menu-kit team",
       "download": "plugins/apps",
-      "sha256": "f04a0a4db0417ea1554057cfdc9519cb1e81484bb323a1e5a6e15da9f473202c",
+      "sha256": "d9f3e49d7afe8dee72b7b3c61a9530d5f6d81aeff29f91f4047b7e80383d8417",
       "dependencies": {
         "python": [],
         "system": {
@@ -17,6 +17,16 @@
           "pacman": []
         }
       },
+      "verified": true
+    },
+    "files": {
+      "version": "0.1.0",
+      "description": "Search and open files",
+      "api_version": "1",
+      "author": "menu-kit team",
+      "download": "plugins/files",
+      "sha256": "f4bb8fe5a346d5da21ed0d8553f1118c22f991252e8496fcbdaedbb25956e6ba",
+      "dependencies": {},
       "verified": true
     }
   }
