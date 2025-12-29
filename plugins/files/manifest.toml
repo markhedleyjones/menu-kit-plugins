@@ -1,0 +1,13 @@
+[plugin]
+name = "files"
+version = "0.1.0"
+description = "Search and open files"
+api_version = "1"
+author = "menu-kit team"
+
+[dependencies.python]
+
+[dependencies.system]
+apt = []
+dnf = []
+pacman = []

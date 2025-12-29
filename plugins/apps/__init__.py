@@ -69,8 +69,9 @@ class AppsPlugin:
 
     def _launch_app(self, ctx: object, app_id: str) -> None:
         """Launch an app by ID."""
-        # Get the item from database
-        item = ctx.database.get_item(app_id)  # type: ignore[attr-defined]
+        # Reconstruct full ID if needed (runner passes action part only)
+        full_id = f"apps:{app_id}" if not app_id.startswith("apps:") else app_id
+        item = ctx.database.get_item(full_id)  # type: ignore[attr-defined]
         if item is None or item.metadata is None:
             return
 
